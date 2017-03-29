@@ -793,7 +793,7 @@ public class CubeManager implements IRealizationProvider {
 
     private boolean isITTestCube(String cubeName) {
         return config.isDevEnv() //
-                && (cubeName.startsWith("test_kylin_cube") || cubeName.startsWith("test_streaming"));
+                && (cubeName.startsWith("test_kylin_cube") || cubeName.startsWith("test_streaming") || cubeName.equals("kylin_sales_cube"));
     }
 
     private MetadataManager getMetadataManager() {
